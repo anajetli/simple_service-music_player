@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atifnaseem.musicmusic.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/background_05"
+        android:scaleType="centerCrop"
+         />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_album"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#ffffff"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ellie_02"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_album"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_songName"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="" />
+
+
+    <SeekBar
+        android:id="@+id/sb_song"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_singer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tv_remainingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sb_song"
+        android:layout_below="@+id/sb_song"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:text="-00:00" />
+
+    <TextView
+        android:id="@+id/tv_playTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sb_song"
+        android:layout_below="@+id/sb_song"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:text="00:00" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_rewind"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="PreviousSong"
+            android:rotation="-180"
+            android:background="@drawable/mp_next"
+            />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="PlaySong"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/mp_play"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_forward"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="NextSong"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/mp_next"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

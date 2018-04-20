@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="backgrounds">
+        <item>@drawable/background_05</item>
+        <item>@drawable/background_07</item>
+        <item>@drawable/background_08</item>
+        <item>@drawable/background_03</item>
+        <item>@drawable/background_04</item>
+        <item>@drawable/background_00</item>
+        <item>@drawable/background_06</item>
+        <item>@drawable/background_01</item>
+    </array>
+
+    <array name="albums">
+        <item>@drawable/ellie_02</item>
+        <item>@drawable/ellie_01</item>
+        <item>@drawable/cs_coldplay_02</item>
+        <item>@drawable/cs_coldplay_01</item>
+        <item>@drawable/cs_coldplay_03</item>
+    </array>
+</resources>
